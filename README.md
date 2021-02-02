@@ -34,6 +34,13 @@ iface enp0s3 inet dhcp -> deixe em dhcp ou fixo
         
         
         
+        
+        remover tempo de espera grub
+edit: /etc/default/grub - comenta a linha timeout
+        
+        
+        
+        
         para compartilhar internet devemos ativar o forwading de internet com o comanddo abaixo
  # sysctl -w net.ipv4.ip_forward=" " 1 para ativar, 0 para fechar o compartilhamento de internet
  
